@@ -8,43 +8,43 @@
         <record id="club_tottenham_hotspur" model="epl.club">
             <field name="name">Tottenham Hotspur FC</field>
             <field name="date_founded">1899</field>
-            <field name="city">London</field>
-            <field name="division">1</field>
+            <field name="home_city">London</field>
+            <field name="efl_tier">1</field>
             <field name="players_lines" eval="False"/>
         </record>
         <record id="club_arsenal" model="epl.club">
             <field name="name">Arsenal FC</field>
             <field name="date_founded">1899</field>
-            <field name="city">London</field>
-            <field name="division">1</field>
+            <field name="home_city">London</field>
+            <field name="efl_tier">1</field>
             <field name="players_lines" eval="False"/>
         </record>
         <record id="club_crystal_palace" model="epl.club">
             <field name="name">Crystal Palace FC</field>
             <field name="date_founded">1899</field>
-            <field name="city">London</field>
-            <field name="division">1</field>
+            <field name="home_city">London</field>
+            <field name="efl_tier">1</field>
             <field name="players_lines" eval="False"/>
         </record>
         <record id="club_fulham" model="epl.club">
             <field name="name">Fulham FC</field>
             <field name="date_founded">1899</field>
-            <field name="city">London</field>
-            <field name="division">1</field>
+            <field name="home_city">London</field>
+            <field name="efl_tier">1</field>
             <field name="players_lines" eval="False"/>
         </record>
         <record id="club_chelsea" model="epl.club">
             <field name="name">Chelsea FC</field>
             <field name="date_founded">1899</field>
-            <field name="city">London</field>
-            <field name="division">1</field>
+            <field name="home_city">London</field>
+            <field name="efl_tier">1</field>
             <field name="players_lines" eval="False"/>
         </record>
         <record id="club_west_ham" model="epl.club">
             <field name="name">West Ham United</field>
             <field name="date_founded">1899</field>
-            <field name="city">London</field>
-            <field name="division">1</field>
+            <field name="home_city">London</field>
+            <field name="efl_tier">1</field>
             <field name="players_lines" eval="False"/>
         </record>
 
@@ -53,29 +53,29 @@
 
         <record id="nat_england" model="epl.nat">
             <field name="name">England</field>
-            <field name="continent">Europe</field>
+            <field name="continent">eu</field>
             <field name="players_lines" eval="False"/>
         </record>
         <record id="nat_wales" model="epl.nat">
             <field name="name">Wales</field>
-            <field name="continent">Europe</field>
+            <field name="continent">eu</field>
             <field name="players_lines" eval="False"/>
         </record>
         <record id="nat_scotland" model="epl.nat">
             <field name="name">Scotland</field>
-            <field name="continent">Europe</field>
+            <field name="continent">eu</field>
             <field name="players_lines" eval="False"/>
         </record>
         <record id="nat_france" model="epl.nat">
             <field name="name">France</field>
-            <field name="continent">Europe</field>
+            <field name="continent">eu</field>
             <field name="players_lines" eval="False"/>
         </record>
         <record id="nat_argentina" model="epl.nat">
             <field name="name">Argentina</field>
-            <field name="continent">South America</field>
-            <!-- <field name="players_lines" eval="False"/>
-             evalFalse's need -> ref=XYZ, and ref'd id needs a ID=xyz tag but idk how-->
+            <field name="continent">sa</field>
+            <field name="players_lines" eval="False"/>
+             <!-- evalFalse's need -> ref=XYZ, and ref'd id needs a ID=xyz tag but idk how -->
         </record>
 
 
@@ -83,13 +83,13 @@
 
         <record id="harry_kane" model="epl.player">
             <field name="name">Harry Kane</field>
-            <field name="age" eval="29"/>
+            <field name="age">29</field>
             <!-- <field name="club_id">TH</field> -->
-            <!-- <field name="nat_id">ENG</field> -->
-            <field name="position">cf</field>
-            <field name="goals_scored" eval="195"/>
-            <field name="apps_made" eval="260"/>
-
+            <field name="nat_id" eval="nat_england"/>
+            <field name="play_position">cf</field>
+            <field name="goals_scored">195</field>
+            <field name="apps_made">260</field>
+        </record>
     </data>
     
 
