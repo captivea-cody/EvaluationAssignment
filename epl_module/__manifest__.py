@@ -18,13 +18,13 @@
 ########################################################################################
 
 {
-    'name': 'CAP PLM Enhancements',
+    'name': 'EPL Data Module',
     'version': '15.0.0.2',
-    'summary': 'Enhances product lifecycle management and related model functionality',
-    'description': """Refer to index.html file for references to tickets covered in this module
+    'summary': 'A bunch of silly soccer faff.',
+    'description': """Soccer is cool
                 """,
-    'category': 'Product Lifecycle Management',
-    'author': 'Captivea LLC, BEL',
+    'category': 'Evaluation Assignment',
+    'author': 'Captivea LLC, Cody Wiggins',
     'company': 'Captivea LLC',
     'maintainer': 'https://www.captivea.com/',
     'depends': 
@@ -39,14 +39,14 @@
     ],
     'website': 'https://www.captivea.com/',
     'data': [
-        'views/plm_view.xml',
-        'data/mrp_eco_stage_data.xml',
+        'views/epl_view.xml',
+        'data/club_nat_player_data.xml',
     ],
     'qweb': [],
     'images': ['static/description/icon.png'],
     'license': 'OPL-1',
     'installable': True,
     'auto_install': False,
-    'application': False,
+    'application': True,
     "cloc_exclude": ["./**/*"],  # exclude all files in a module recursively
 }
