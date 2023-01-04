@@ -65,19 +65,23 @@
             <field name="model">epl.player</field>
             <field name="arch" type="xml">
                 <form>
+                    <button string="Make Transfer" name="action_make_transfer" type="object" class="oe_highlight" />
                     <sheet>
                         <group>
-                            <field name="name"/>
-                            <field name="age"/>
-                            <field name="nat_id"/>
-                            <field name="club_id"/>
-                            <field name="play_position"/>
-                            <field name="goals_scored"/>
-                            <field name="apps_made"/>
+                            <group>
+                                <field name="name"/>
+                                <field name="age"/>
+                                <field name="nat_id"/>
+                                <field name="club_id"/>
+                                <field name="play_position"/>
+                                <field name="goals_scored"/>
+                                <field name="apps_made"/>
+                            </group>
+                            <group>
+                                <field name="transfer_id"/>
+                                <field name="club_ids" widget="many2many_tags"/>
+                            </group>
                         </group>
-                        <!-- <group>
-                            <field name="club_ids" widget="many2many_tags"/>
-                        </group> -->
                     </sheet>
                 </form>
             </field>
