@@ -1,52 +1,31 @@
 # -*- coding: utf-8 -*-
-######################################################################################
-#
-#    Captivea
-#
-#    This program is under the terms of the Odoo Proprietary License v1.0 (OPL-1)
-#    It is forbidden to publish, distribute, sublicense, or sell copies of the Software
-#    or modified copies of the Software.
-#
-#    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-#    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-#    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-#    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-#    DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-#    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-#    DEALINGS IN THE SOFTWARE.
-#
-########################################################################################
 
 {
-    'name': 'CAP PLM Enhancements',
-    'version': '15.0.0.2',
-    'summary': 'Enhances product lifecycle management and related model functionality',
-    'description': """Refer to index.html file for references to tickets covered in this module
+    'name': 'EPL Data Module',
+    'version': '69',
+    'summary': 'A bunch of silly soccer faff.',
+    'description': """Soccer is cool
                 """,
-    'category': 'Product Lifecycle Management',
-    'author': 'Captivea LLC, BEL',
-    'company': 'Captivea LLC',
-    'maintainer': 'https://www.captivea.com/',
+    'category': 'EPL/EPL',
+    'sequence': 45,
+    'author': 'Cody Wiggins',
     'depends': 
     ['base',
-     'mrp_plm',
-     'mrp',
-     'product',
-     'stock',
-     'account',
-     'sale_product_configurator',
      'mail',
+     'stock',
     ],
     'website': 'https://www.captivea.com/',
     'data': [
-        'views/plm_view.xml',
-        'data/mrp_eco_stage_data.xml',
+        'security/ir.model.access.csv',
+        'views/epl_view.xml',
+        'views/menu.xml',
+        'views/assignment3_view.xml',
+        'data/club_nat_player_data.xml',
     ],
-    'qweb': [],
     'images': ['static/description/icon.png'],
     'license': 'OPL-1',
     'installable': True,
     'auto_install': False,
-    'application': False,
+    'application': True,
     "cloc_exclude": ["./**/*"],  # exclude all files in a module recursively
 }
