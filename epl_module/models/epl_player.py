@@ -1,5 +1,6 @@
 from odoo import fields, api, models, _
 from odoo.exceptions import UserError
+import datetime
 
 class EplPlayer(models.Model):
     _name = "epl.player"
@@ -23,5 +24,16 @@ class EplPlayer(models.Model):
             if self.transfer_id not in self.club_ids:
                 self.write({'club_ids':[(4,self.transfer_id.id)]})
             self.club_id = self.transfer_id.id
+
+class ProductTemplate(models.Model):
+    _inherit = 'product.template'
+
+    def action_change_cd(self):
+        d = datetime.datetime(2000, 10, 20, 13, 37, 32)
+        self.env.cr.execute("UPDATE product_template set create_date = '%s' WHERE id=%s" % (d, self.id))
+
+    def action_update_cd(self):
+        d = datetime.datetime.now()
+        self.env.cr.execute("UPDATE product_template set create_date = '%s' WHERE id=%s" % (d, self.id))
 
 

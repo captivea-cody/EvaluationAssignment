@@ -19,6 +19,7 @@
         'security/ir.model.access.csv',
         'views/epl_view.xml',
         'views/menu.xml',
+        'views/assignment3_view.xml',
         'data/club_nat_player_data.xml',
     ],
     'images': ['static/description/icon.png'],
