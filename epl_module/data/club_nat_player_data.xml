@@ -75,7 +75,6 @@
             <field name="name">Argentina</field>
             <field name="continent">sa</field>
             <field name="players_lines" eval="False"/>
-             <!-- evalFalse's need -> ref=XYZ, and ref'd id needs a ID=xyz tag but idk how. in record init, eval=nat_england style variable? -->
         </record>
 
 
@@ -84,11 +83,20 @@
         <record id="harry_kane" model="epl.player">
             <field name="name">Harry Kane</field>
             <field name="age">29</field>
-            <!-- <field name="club_id">TH</field> -->
+            <field name="club_id" eval="club_tottenham_hotspur"/>
             <field name="nat_id" eval="nat_england"/>
             <field name="play_position">cf</field>
             <field name="goals_scored">195</field>
             <field name="apps_made">260</field>
+        </record>
+        <record id="ben_davies" model="epl.player">
+            <field name="name">Ben Davies</field>
+            <field name="age">28</field>
+            <field name="club_id" eval="club_tottenham_hotspur"/>
+            <field name="nat_id" eval="nat_wales"/>
+            <field name="play_position">fb</field>
+            <field name="goals_scored">13</field>
+            <field name="apps_made">211</field>
         </record>
     </data>
     

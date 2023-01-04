@@ -3,9 +3,7 @@
     <data>
         <record id="view_epl_kanban" model="ir.ui.view">
             <field name="name">epl.player.kanban</field>
-            <!-- <field name="type">ir.actions.act_window</field> -->
             <field name="model">epl.player</field>
-            <!-- <field name="view_mode">kanban</field> -->
             <field name="arch" type="xml">
                 <kanban>
                     <field name="id"/>
@@ -30,6 +28,9 @@
                                             Nationality: <field name="nat_id"/>
                                         </li>
                                         <li>
+                                            Club: <field name="club_id"/>
+                                        </li>
+                                        <li>
                                             Position: <field name="play_position"/>
                                         </li>
                                         <li>
@@ -46,23 +47,69 @@
                 </kanban>
             </field>
         </record>
+        <record id="view_epl_list" model="ir.ui.view">
+            <field name="name">epl.player.tree</field>
+            <field name="model">epl.player</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="age"/>
+                    <field name="play_position"/>
+                    <field name="goals_scored"/>
+                    <field name="apps_made"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_epl_form" model="ir.ui.view">
+            <field name="name">epl.player.form</field>
+            <field name="model">epl.player</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="age"/>
+                            <field name="nat_id"/>
+                            <field name="club_id"/>
+                            <field name="play_position"/>
+                            <field name="goals_scored"/>
+                            <field name="apps_made"/>
+                        </group>
+                        <!-- <group>
+                            <field name="club_ids" widget="many2many_tags"/>
+                        </group> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
 
         <record id="action_epl_kanban" model="ir.actions.act_window">
-            <field name="name">EPL KanBan</field>
+            <field name="name">Players Kanban</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">epl.player</field>
             <field name="view_mode">kanban,form</field>
         </record>
+        <record id="action_epl_list" model="ir.actions.act_window">
+            <field name="name">Players List</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">epl.player</field>
+            <field name="view_mode">tree,form</field>
+        </record>
 
+        <record id="action_epl_club" model="ir.actions.act_window">
+            <field name="name">EPL Clubs</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">epl.club</field>
+            <field name="view_mode">kanban,form</field>
+        </record>
 
+        <record id="action_epl_nat" model="ir.actions.act_window">
+            <field name="name">EPL Nations</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">epl.nat</field>
+            <field name="view_mode">kanban,form</field>
+        </record>
 
-
-
-
-        <!-- <menuitem id="epl_menu"
-                  name="EPL Info"
-                  sequence="0"
-                  action="action_epl_kanban"/> -->
 
    </data>
 </odoo>

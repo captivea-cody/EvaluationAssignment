@@ -10,4 +10,6 @@ class EplPlayer(models.Model):
     play_position = fields.Selection([('cf', 'Center Forward'), ('lw', 'Left Winger'), ('rw', 'Right Winger'), ('lm', 'Left Midfield'), ('cm', 'Center Midfield'), ('rm', 'Right midfield'), ('fb', 'Full Back'), ('cb', 'Center Back'), ('gk', 'Goalkeeper')])
     goals_scored = fields.Integer(string="Goals Scored")
     apps_made = fields.Integer(string="Appearances Made")
+    # club_ids = fields.Many2many('epl.club', string="Has Played For:") relTable D.N.E.
+
 

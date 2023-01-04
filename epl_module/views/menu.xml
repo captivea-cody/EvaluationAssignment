@@ -12,6 +12,22 @@
               parent="menu_epl_root"
               action="action_epl_kanban"
               sequence="0"/> 
-              <!-- reason to believe these two do nothing -->
+    <menuitem id="menu_epl_player_list"
+              name="Player List"
+              parent="menu_epl_root"
+              action="action_epl_list"
+              sequence="1"/> 
+
+    <menuitem id="menu_epl_club"
+              name="Club Tracker"
+              parent="menu_epl_root"
+              action="action_epl_club"
+              sequence="2"/> 
+
+    <menuitem id="menu_epl_nat"
+              name="Nation Tracker"
+              parent="menu_epl_root"
+              action="action_epl_nat"
+              sequence="3"/> 
 
 </odoo>
