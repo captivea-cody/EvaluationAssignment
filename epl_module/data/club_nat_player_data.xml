@@ -75,7 +75,6 @@
             <field name="name">Argentina</field>
             <field name="continent">sa</field>
             <field name="players_lines" eval="False"/>
-             <!-- evalFalse's need -> ref=XYZ, and ref'd id needs a ID=xyz tag but idk how -->
         </record>
 
 
@@ -84,11 +83,52 @@
         <record id="harry_kane" model="epl.player">
             <field name="name">Harry Kane</field>
             <field name="age">29</field>
-            <!-- <field name="club_id">TH</field> -->
+            <field name="club_id" eval="club_tottenham_hotspur"/>
             <field name="nat_id" eval="nat_england"/>
             <field name="play_position">cf</field>
             <field name="goals_scored">195</field>
             <field name="apps_made">260</field>
+            <field name="club_ids" eval="[(4, club_tottenham_hotspur)]"/>
+        </record>
+        <record id="ben_davies" model="epl.player">
+            <field name="name">Ben Davies</field>
+            <field name="age">28</field>
+            <field name="club_id" eval="club_tottenham_hotspur"/>
+            <field name="nat_id" eval="nat_wales"/>
+            <field name="play_position">fb</field>
+            <field name="goals_scored">13</field>
+            <field name="apps_made">211</field>
+            <field name="club_ids" eval="[(4, club_tottenham_hotspur)]"/>
+        </record>
+        <record id="cristian_romero" model="epl.player">
+            <field name="name">Cristian Romero</field>
+            <field name="age">24</field>
+            <field name="club_id" eval="club_tottenham_hotspur"/>
+            <field name="nat_id" eval="nat_argentina"/>
+            <field name="play_position">cb</field>
+            <field name="goals_scored">1</field>
+            <field name="apps_made">27</field>
+            <field name="club_ids" eval="[(4, club_tottenham_hotspur)]"/>
+        </record>
+        <record id="hugo_lloris" model="epl.player">
+            <field name="name">Hugo Lloris</field>
+            <field name="age">34</field>
+            <field name="club_id" eval="club_tottenham_hotspur"/>
+            <field name="nat_id" eval="nat_france"/>
+            <field name="play_position">gk</field>
+            <field name="goals_scored">0</field>
+            <field name="apps_made">302</field>
+            <field name="club_ids" eval="[(4, club_tottenham_hotspur)]"/>
+        </record>
+        <record id="kieran_tierney" model="epl.player">
+            <field name="name">Kieran Tierney</field>
+            <field name="age">26</field>
+            <field name="club_id" eval="club_arsenal"/>
+            <field name="nat_id" eval="nat_scotland"/>
+            <field name="play_position">rw</field>
+            <field name="goals_scored">63</field>
+            <field name="apps_made">192</field>
+            <field name="club_ids" eval="[(4, club_arsenal)]"/>
         </record>
     </data>
     

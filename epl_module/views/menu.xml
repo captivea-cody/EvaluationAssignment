@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <menuitem id="menu_epl_root"
+              name="EPL Tracker"
+              web_icon="epl_module,static/description/icon.png"
+              action="action_epl_kanban"
+              sequence="0"/>
+
+    <menuitem id="menu_epl_player"
+              name="Player Tracker"
+              parent="menu_epl_root"
+              action="action_epl_kanban"
+              sequence="0"/> 
+    <menuitem id="menu_epl_player_list"
+              name="Player List"
+              parent="menu_epl_root"
+              action="action_epl_list"
+              sequence="1"/> 
+
+    <menuitem id="menu_epl_club"
+              name="Club Tracker"
+              parent="menu_epl_root"
+              action="action_epl_club"
+              sequence="2"/> 
+
+    <menuitem id="menu_epl_nat"
+              name="Nation Tracker"
+              parent="menu_epl_root"
+              action="action_epl_nat"
+              sequence="3"/> 
+
+</odoo>
