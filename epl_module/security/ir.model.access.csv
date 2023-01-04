@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_epl_player,access.epl_player,model_epl_player,,1,1,1,1
+access_epl_club,access.epl.club,model_epl_club,,1,1,1,1
+access_epl_nat,access.epl.nat,model_epl_nat,,1,1,1,1

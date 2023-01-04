@@ -16,7 +16,7 @@
     ],
     'website': 'https://www.captivea.com/',
     'data': [
-        'security/ir_model_access.csv',
+        'security/ir.model.access.csv',
         'views/epl_view.xml',
         'views/menu.xml',
         'data/club_nat_player_data.xml',

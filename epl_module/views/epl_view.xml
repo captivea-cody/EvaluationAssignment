@@ -55,6 +55,8 @@
                     <field name="name"/>
                     <field name="age"/>
                     <field name="play_position"/>
+                    <field name="club_id"/>
+                    <field name="nat_id"/>
                     <field name="goals_scored"/>
                     <field name="apps_made"/>
                 </tree>
