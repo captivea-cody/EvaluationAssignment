@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <menuitem id="menu_epl_root"
+              name="EPL Tracker"
+              web_icon="epl_module,static/description/icon.png"
+              action="action_epl_kanban"
+              sequence="0"/>
+
+    <menuitem id="menu_epl_player"
+              name="Player Tracker"
+              parent="menu_epl_root"
+              action="action_epl_kanban"
+              sequence="0"/> 
+              <!-- reason to believe these two do nothing -->
+
+</odoo>

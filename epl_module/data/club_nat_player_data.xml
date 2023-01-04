@@ -75,7 +75,7 @@
             <field name="name">Argentina</field>
             <field name="continent">sa</field>
             <field name="players_lines" eval="False"/>
-             <!-- evalFalse's need -> ref=XYZ, and ref'd id needs a ID=xyz tag but idk how -->
+             <!-- evalFalse's need -> ref=XYZ, and ref'd id needs a ID=xyz tag but idk how. in record init, eval=nat_england style variable? -->
         </record>
 
 
